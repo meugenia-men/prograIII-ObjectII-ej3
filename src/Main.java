@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
     /*Crear un Cliente e imprimirlo en pantalla.*/
         ClientBank client1=new ClientBank("Neira Maria Eugenia",'F');
-        System.out.println(client1.toString());
+        System.out.println(client1);
 
     /*Crear una Cuenta bancaria para el Cliente anterior con un saldo inicial de
     10000.*/

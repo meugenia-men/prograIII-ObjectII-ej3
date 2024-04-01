@@ -1,7 +1,7 @@
 import java.util.UUID;
 
 public class ClientBank {
-    private UUID id;
+    public static Integer id = 0;
     private String name;
     private Character gender;
 
@@ -9,12 +9,12 @@ public class ClientBank {
     }
 
     public ClientBank(String name, Character gender) {
-        this.id=UUID.randomUUID();
+        this.id += 1;
         this.name = name;
         this.gender = gender;
     }
 
-    public UUID getId() {
+    public static Integer getId() {
         return id;
     }
 
@@ -35,9 +35,9 @@ public class ClientBank {
     }
 
     @Override
-    public String toString(){
-        return "Cliente = [Nombre y apellido = "+this.name+
-                "] - [Genero= "+this.gender+
+    public String toString() {
+        return "Cliente = [Nombre y apellido = " + this.name +
+                "] - [Genero= " + this.gender +
                 "]";
     }
 }

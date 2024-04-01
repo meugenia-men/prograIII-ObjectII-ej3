@@ -1,5 +1,5 @@
 public class BankAccount {
-    private Integer id;
+    private static Integer id = 0;
     private Double balance;
     private ClientBank client;
 
@@ -11,7 +11,7 @@ public class BankAccount {
         this.client = client;
     }
 
-    public Integer getId() {
+    public static Integer getId() {
         return id;
     }
 
