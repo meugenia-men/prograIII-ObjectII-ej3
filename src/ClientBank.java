@@ -9,7 +9,7 @@ public class ClientBank {
     }
 
     public ClientBank(String name, Character gender) {
-        this.id += 1;
+        id ++;
         this.name = name;
         this.gender = gender;
     }
